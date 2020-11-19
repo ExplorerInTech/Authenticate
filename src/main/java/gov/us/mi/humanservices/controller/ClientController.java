@@ -19,7 +19,6 @@ import static org.springframework.security.oauth2.client.web.reactive.function.c
 
 
 @Controller
-@RequestMapping("/campaign")
 public class ClientController {
 	
 	@GetMapping("/")
