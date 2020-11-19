@@ -1,0 +1,16 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          miresident:
+            client-id: Dp6INrnphC6evL1YQcQW
+            client-secret: gNRASQTYNq2gOpYRDrjd
+            redirect-uri: https://miresidentoutreach-dev.state.mi.us/_codexch
+            scope:
+              - openid
+              - profile
+              - email
+        provider:
+          milogin:
+            issuer-uri: https://miloginworkerqa.michigan.gov/mga/sps/oauth/oauth20/metadata/MiResident%20Outreach/
