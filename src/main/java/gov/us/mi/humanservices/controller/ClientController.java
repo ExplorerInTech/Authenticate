@@ -27,12 +27,12 @@ public class ClientController {
         return "index";
     }
 	
-	@GetMapping("/user")
+	@GetMapping("/_codexch")
 	public String get(Model model,
             @AuthenticationPrincipal OidcUser oidcUser) {
 		model.addAttribute("userName", oidcUser.getName());
         model.addAttribute("audience", oidcUser.getAudience());
         return "user";
 	}
-
+	
 }
